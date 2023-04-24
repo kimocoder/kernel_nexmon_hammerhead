@@ -39,9 +39,7 @@ import subprocess
 # Note that gcc uses unicode, which may depend on the locale.  TODO:
 # force LANG to be set to en_US.UTF-8 to get consistent warnings.
 
-allowed_warnings = set([
-    "return_address.c:62",
- ])
+allowed_warnings = {"return_address.c:62"}
 
 # Capture the name of the object file, can find it.
 ofile = None
